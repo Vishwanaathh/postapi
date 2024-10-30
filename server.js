@@ -20,7 +20,7 @@ app.post('/product',async(req,res)=>{
     }
 })
 mongoose.
-connect("mongodb+srv://admin:root@cluster0.kwlzyeo.mongodb.net/REY?retryWrites=true&w=majority&appName=Cluster0")
+connect()
 .then(()=>{
     console.log("connected");
     app.listen(3002,()=>{
